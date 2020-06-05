@@ -8,7 +8,7 @@ Um dos maiores impactos do COVID-19 em Portugal tem sido no mercado de trabalho.
 Criar uma pipeline de extração diária de dados do ficheiro `.csv` publicado pelo MTSSS com um dicionário de dados associados.
 
 ## 👥 Equipa:
-* [João Briceno Torres](https://github.com/jbricenot)
+* [John Briceno Torres](https://github.com/jbricenot)
 * [Mariana Galrinho](https://github.com/marianabvsg)
 * [Ana Horta](https://github.com/japana26)
 
