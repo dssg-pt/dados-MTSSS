@@ -35,6 +35,26 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 
 ## Dicionário de Dados
 
+Baixas por Isolamento por Data de entrada - `baixas_all.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| DATA | Data de entrada |
+| POR DIA | Número de prestações requiridas por dia |
+| ACUMULADOS | Número de prestações acumulado ao longo do tempo |
+
+Baixas por Isolamento por Distrito - `baixas_distrito.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| DISTRITO | Distrito de entrada da prestação |
+| TOTAL | Número de prestações total por distrito |
+
+Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_layoff.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| DATA | Data  |
+| Nº TRABALHADORES | Número de trabalhadores - valor acumulado |
+| REMUNERAÇÕES DECLARADAS | Massa salarial - valor acumulado |
+
 Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
 | Coluna | Descrição |
 | --- | --- |
