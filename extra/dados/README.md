@@ -22,8 +22,12 @@ Dados considerados relevantes para o estudo, juntamente com alguns detalhes/assu
 - Layoff por Código de Atividade Económica/ Setor;
 - Layoff por sexo;
 - Layoff por distrito e dimensão da empresa; 
-- Redução de atividade por data de registo dos pedidos (`reducao_atividade_porDia.csv`): a divisão das várias tabelas na worksheet de Redução de Atividade é obtida através da identificação das linhas que possuem todos as colunas em branco (excepto a primeira). Nesta tabela são apenas mantidas as linhas com formato de data na primeira coluna de forma a remover as linhas com o total, uma vez que a existência destas não é consistente ao longo dos vários ficheiros publicados;
-- Redução de atividade por distrito de residência (`reducao_atividade_porDistrito_Total.csv`, `reducao_atividade_porDistrito_porMes.csv` e `reducao_atividade_bydistrict_historicaData.csv`): dado que não existe consistência nas colunas com o total de pedidos (por vezes são publicados ficheiros sem total ou com o total apenas para certos tipos de pedidos), começa-se por criar um .csv com os dados por mês para cada tipo (removendo as colunas sem identificação ou identificadas como total), e depois cria-se um .csv com os totais, obtidos a partir da soma para todos os meses;
+- Redução de atividade por data de registo dos pedidos (`reducao_atividade_porDia.csv`): 
+  - A divisão das várias tabelas na worksheet de Redução de Atividade é obtida através da identificação das linhas que possuem todos as colunas em branco (excepto a primeira);
+  - Nesta tabela são apenas mantidas as linhas com formato de data na primeira coluna de forma a remover as linhas com o total, uma vez que a existência destas não é consistente ao longo dos vários ficheiros publicados;
+- Redução de atividade por distrito de residência (`reducao_atividade_porDistrito_Total.csv`, `reducao_atividade_porDistrito_porMes.csv` e `reducao_atividade_bydistrict_historicaData.csv`): 
+  - Dado que não existe consistência nas colunas com o total de pedidos (por vezes são publicados ficheiros sem total ou com o total apenas para certos tipos de pedidos), começa-se por criar um .csv com os dados por mês para cada tipo (removendo as colunas sem identificação ou identificadas como total);
+  - Depois é criado um .csv com os totais, obtidos a partir da soma para todos os meses;
 - Redução de atividade por sexo (`reducao_atividade_porSexo.csv` e `reducao_atividade_bysex_historicaData.csv`);
 - Despedimentos Coletivos (`despedimentos_coletivos.csv`). 
 
