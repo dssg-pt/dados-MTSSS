@@ -72,14 +72,14 @@ Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
 | PRO_MOE_Reducao | Número de pedidos de Redução de Atividade para Membro de Orgão Estatutário - Prorrogação |
 | PRO_MOE_Total | Número total de pedidos para Membro de Orgão Estatutário - Prorrogação |
 
-Redução de Atividade por Distrito, por Mês - `reducao_atividade_porDistrito_porMes.csv` :
+Redução de Atividade por Distrito, valor acumulado para cada Mês - `reducao_atividade_porDistrito_porMes.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | Distritos | Distrito de Residência |
 | Tipo | Colunas com o número total de pedidos para cada tipo de pedido: COVID_RED_TI (Trabalhador Independente), COVID_PRO_RED_TI (Trabalhador Independente - Prorrogação), COVID_RED_MOE (Membro de Orgão Estatutário), COVID_PRO_RED_TI (Membro de Orgão Estatutário - Prorrogação)  |
 | Month | Colunas com o número total de pedidos em cada mês dado o tipo de pedido. Para cada tipo aparecem apenas os meses para os quais existem contagens |
 
-Redução de Atividade por Distrito, Total- `reducao_atividade_porDistrito_Total.csv` :
+Redução de Atividade por Distrito, valor acumulado Total- `reducao_atividade_porDistrito_Total.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | Distritos | Distrito de residência |
