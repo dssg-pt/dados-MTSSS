@@ -34,3 +34,67 @@ Dados considerados relevantes para o estudo, juntamente com alguns detalhes/assu
 Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 
 ## Dicionário de Dados
+
+Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| DATA | Data de registo dos pedidos |
+| TI_ParagemTotal | Número de pedidos de Paragem Total para Trabalhadores Independentes   |
+| TI_Reducao | Número de pedidos de Redução de Atividade para Trabalhadores Independentes |
+| TI_Total | Número total de pedidos para Trabalhadores Independentes  |
+| PRO_TI_ParagemTotal | Número de pedidos de Paragem Total para Trabalhadores Independentes - Prorrogação   |
+| PRO_TI_Reducao | Número de pedidos de Redução de Atividade para Trabalhadores Independentes - Prorrogação |
+| PRO_TI_Total | Número total de pedidos para Trabalhadores Independentes - Prorrogação |
+| MOE_ParagemTotal | Número de pedidos de Paragem Total para Membro de Orgão Estatutário   |
+| MOE_Reducao | Número de pedidos de Redução de Atividade para Membro de Orgão Estatutário |
+| MOE_Total | Número total de pedidos para Membro de Orgão Estatutário  |
+| PRO_MOE_ParagemTotal | Número de pedidos de Paragem Total para Membro de Orgão Estatutário - Prorrogação   |
+| PRO_MOE_Reducao | Número de pedidos de Redução de Atividade para Membro de Orgão Estatutário - Prorrogação |
+| PRO_MOE_Total | Número total de pedidos para Membro de Orgão Estatutário - Prorrogação |
+
+Redução de Atividade por Distrito, por Mês - `reducao_atividade_porDistrito_porMes.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| Distritos | Distrito de Residência |
+| Tipo | Colunas com o número total de pedidos para cada tipo de pedido: COVID_RED_TI (Trabalhador Independente), COVID_PRO_RED_TI (Trabalhador Independente - Prorrogação), COVID_RED_MOE (Membro de Orgão Estatutário), COVID_PRO_RED_TI (Membro de Orgão Estatutário - Prorrogação)  |
+| Month | Colunas com o número total de pedidos em cada mês dado o tipo de pedido. Para cada tipo aparecem apenas os meses para os quais existem contagens |
+
+Redução de Atividade por Distrito, Total- `reducao_atividade_porDistrito_Total.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| Distritos | Distrito de residência |
+| PRO_MOE | Número total de pedidos para Membro de Orgão Estatutário - Prorrogação |
+| PRO_TI | Número total de pedidos para Trabalhador Independente - Prorrogação |
+| MOE | Número total de pedidos para Membro de Orgão Estatutário  |
+| TI | Número total de pedidos para Trabalhador Independente |
+
+Redução de Atividade por Distrito, Dados Totais Históricos `reducao_atividade_bydistrict_historicalData.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| Distritos | Distrito de residência |
+| Tipo | Tipo de pedido ((Trabalhador Independente, Trabalhador Independente - Prorrogação, Membro de Orgão Estatutário, Membro de Orgão Estatutário - Prorrogação))|
+| Datas | As restantes colunas contêm o número total de pedidos por tipo e por distrito para a respetiva data|
+
+Redução de Atividade por Sexo- `reducao_atividade_porSexo.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| TipoPedido | Tipo de pedido |
+| Total | Número total de trabalhadores |
+| Feminino | Número de trabalhadores do sexo feminino |
+| Masculino | Número de trabalhadores do sexo masculino |
+
+Redução de Atividade por Sexo, Dados Históricos `reducao_atividade_bysex_historicalData.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| TipoPedido | Tipo de pedido |
+| Sexo | Sexo do trabalhador (feminino ou masculino) |
+| Datas | As restantes colunas contêm o número total de pedidos por tipo e por sexo para a respetiva data|
+
+Despedimentos Coletivos - `despedimentos_coletivos.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| DATA | Data de iniciação dos processos |
+| COLETIVOS_TOTAL | Número total de processos de despedimento coletivo iniciados - valores acumulados com contagem reiniciada em cada mês  |
+| COLETIVOS_MICRO | Número de processos de despedimento coletivo iniciados em Microempresas  (1 a 9 trabalhadores) - valores acumulados com contagem reiniciada em cada mês  |
+| TRABALHADORES_TOTAL | Número total de trabalhadores a despedir - valores acumulados com contagem reiniciada em cada mês  |
+| TRABALHADORES_MICRO | Número de trabalhadores a despedir em Microempresas  (1 a 9 trabalhadores) - valores acumulados com contagem reiniciada em cada mês  |
