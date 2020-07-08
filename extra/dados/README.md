@@ -55,6 +55,21 @@ Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_la
 | Nº TRABALHADORES | Número de trabalhadores - valor acumulado |
 | REMUNERAÇÕES DECLARADAS | Massa salarial - valor acumulado |
 
+Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento - Por Setor e Sexo) - `df_work.csv` :
+| Coluna | Descrição |
+| --- | --- |
+| Setor | Setores de Indústria  |
+| Nº NISS_EE | Número de Identificação da Segurança Social da Entidade Empregadora |
+| Nº TRABALHADORES | Número de trabalhadores |
+| FEMININO | | Nº de trabalhadores do sexo feminino |
+| MARCULINO | Nº de trabalhadores do sexo marcunlino |
+
+Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento - Por distrito e R.A) - `` :
+| Coluna | Descrição |
+| --- | --- |
+| TOTAL | Distritos |
+| Nº NISS_EE | Número de Identificação da Segurança Social da Entidade Empregadora |
+
 Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
 | Coluna | Descrição |
 | --- | --- |
