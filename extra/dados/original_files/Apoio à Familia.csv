@@ -1,7 +1,7 @@
 MEDIDA DE APOIO EXCECIONAL À FAMÍLIA PARA TRABALHADORES - NÚMERO DE PEDIDOS,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
 por data de registo do pedido,,,,,,,
 ,,,,,,,
-Nota: Situação da base de dados 23/06/2020,,,,,,,
+Nota: Situação da base de dados 08/07/2020,,,,,,,
 ,,,,,,,
 Mês de referência Março,,,,,,,
 ,,,,,,,
@@ -77,14 +77,35 @@ Mês de referência Maio,,,,,,,
 2020-06-12 00:00:00,1215,4426,,20,153,,4599
 TOTAL,39402,84592,,1535,8836,,94963
 ,,,,,,,
-,,,,,,,
 TOTAL de EE's (distinto),,38437,,,,,
 ,,,,,,,
 TOTAL de Trabalhadores (distinto),,94574,,,,,
-,,,,,,,
-,,,,,,,
 ,,,,,,,
 NÚMERO MÉDIO DE DIAS DE APOIO,,,,,,,
 Trabalhador por Conta de Outrem,,26.7156154710319,,,,,
 Trabalhadores Independentes,,29.9565881604074,,,,,
 Trabalhadores Servico Doméstico,,30.1218816821098,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Mês de referência Junho,,,,,,,
+,,,,,,,
+,Entidades Empregadoras,Trabalhador por Conta de Outrem,,Trabalhadores Servico Doméstico,Trabalhadores Independentes,,TOTAL de Trabalhadores (TCO + SD + TI)
+2020-07-01 00:00:00,6301,9575,,240,1490,,11305
+2020-07-02 00:00:00,4065,6591,,134,828,,7553
+2020-07-03 00:00:00,3149,5388,,93,542,,6023
+2020-07-04 00:00:00,318,446,,25,183,,654
+2020-07-05 00:00:00,196,241,,42,147,,430
+2020-07-06 00:00:00,3158,6070,,74,544,,6688
+2020-07-07 00:00:00,2557,4682,,62,382,,5126
+2020-07-08 00:00:00,38,44,,2,14,,
+TOTAL,19782,33037,,672,4130,,37839
+,,,,,,,
+TOTAL de EE's (distinto),,19555,,,,,
+,,,,,,,
+TOTAL de Trabalhadores (distinto),,37771,,,,,
+,,,,,,,
+NÚMERO MÉDIO DE DIAS DE APOIO,,,,,,,
+Trabalhador por Conta de Outrem,,24.0938045180049,,,,,
+Trabalhadores Independentes,,27.4684756584197,,,,,
+Trabalhadores Servico Doméstico,,27.4885245901639,,,,,

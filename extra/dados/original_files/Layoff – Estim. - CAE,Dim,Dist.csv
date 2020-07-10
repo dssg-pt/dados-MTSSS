@@ -1,37 +1,59 @@
 EEs QUE ENTREGARAM DOCUMENTO - COVID19 - Layoff Simplificado,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,EEs QUE ENTREGARAM DOCUMENTO - COVID19 - Layoff Simplificado.1,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
-E COM REMUNERAÇÃO DECLARADA EM 2020-02,,,,,,,por Distrito/Região Autónoma,,,,,,,
+E COM REMUNERAÇÃO DECLARADA EM 2020-02,,,,,,,por Distrito/Região Autónoma e NUT III,,,,,,,
 por CAE,,,,,,,e Dimensão de EE,,,,,,,
 ,,,,,,,,,,,,,,
 Nota: ,,,,,,,Notas:,,,,,,,
-Situação da base de dados 23/06/2020,,,,,,,Situação da base de dados 23/06/2020,,,,,,,
+Situação da base de dados 08/07/2020,,,,,,,Situação da base de dados 08/07/2020,,,,,,,
 Uma PS pode ter remunerações por várias NISS_EE com CAEs diferentes,,,,,,,,,,,,,,
 ,,,,Por sexo:,,,,,,,,,,
 ,,,,Nº TRABALHADORES,,,,,,,,,,
 ,,Nº NISS_EE,Nº TRABALHADORES,Feminino,Masculino,,,Nº NISS_EE,,até 10 trabalhadores,11 a 25 trabalhadores,26 a 49 trabalhadores,50 a 249 trabalhadores,>= 250 trabalhadores
-TOTAL,,113853,1366658,705675,660983,,TOTAL,114369,1.0,93068,13183,4261,3318,539
-,PESSOAS SINGULARES COM TRABALHADORES A CARGO ,5464,10361,6901,3460,,AVEIRO,7496,0.06554223609544545,5900,942,340,277,37
-A,"Agricultura, produção animal, caça, floresta e pesca",871,7035,2765,4270,,BEJA,1009,0.008822320733765269,869,90,25,24,1
-B,Indústrias extractivas,64,1026,158,868,,BRAGA,10932,0.09558534218188496,8597,1341,498,457,39
-C,Indústrias transformadoras,11413,302649,140930,161719,,BRAGANÇA,1244,0.010877073332808716,1120,76,38,9,1
-D,"Electricidade, gás, vapor, água quente e fria e ar frio",35,644,93,551,,CASTELO BRANCO,1507,0.013176647518121169,1294,130,37,39,7
-E,"Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição",247,4019,1549,2470,,COIMBRA,3896,0.034065175003716044,3269,389,122,101,15
-F,Construção,3954,54088,7781,46307,,ÉVORA,1363,0.011917565074451993,1150,141,38,30,4
-G,Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos,25343,244856,119777,125079,,FARO,7146,0.06248196626708286,5940,815,222,156,13
-H,Transportes e armazenagem,6591,68152,17133,51019,,GUARDA,1388,0.012136155776477892,1226,104,32,24,2
-I,"Alojamento, restauração e similares",25538,234591,129957,104634,,LEIRIA,5285,0.046210074408274966,4296,638,195,143,13
-J,Actividades de informação e de comunicação ,1432,24374,9393,14981,,LISBOA,27505,0.24049349036889367,21981,3416,1065,825,218
-K,Actividades financeiras e de seguros,384,5268,2885,2383,,PORTALEGRE,749,0.006548977432695923,653,66,16,13,1
-L,Actividades imobiliárias,2520,16931,9431,7500,,PORTO,21698,0.18971924210231794,17272,2681,947,700,98
-M,"Actividades de consultoria, científicas, técnicas e similares",5340,50600,24838,25762,,SANTARÉM,3592,0.03140711206708111,3028,373,102,76,13
-N,Actividades administrativas e dos serviços de apoio,3713,150065,83785,66280,,SETÚBAL,6452,0.05641388837884392,5456,662,183,125,26
-O,Administração pública e defesa; segurança social obrigatória,47,1316,427,889,,VIANA DO CASTELO,2604,0.022768407523017602,2202,245,80,63,14
-P,Educação,2748,35070,27003,8067,,VILA REAL,1981,0.017321127228532206,1743,159,43,34,2
-Q,Actividades de saúde humana e apoio social,7947,95926,83440,12486,,VISEU,3156,0.027594890223749443,2697,276,95,74,14
-R,"Actividades artísticas, de espectáculos, desportivas e recreativas",4574,25507,11860,13647,,R.A.AÇORES,2081,0.0181954900366358,1719,235,71,51,5
-S,Outras actividades de serviços,5624,34160,25558,8602,,R.A.MADEIRA,3239,0.028320611354475427,2616,400,112,96,15
-T + U,Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das  famílias para uso próprio + Actividades dos organismos internacionais e outras instituições extra-territoriais,4,20,11,9,,DESCONHECIDO/A,46,0.0004022068917276535,40,4,0,1,1
-,,,,,,,,,,,,,,
-Notas: ,,,,,,,,,,,,,,
-"os totais podem ser divergentes, nomeadamente tendo em conta EE com CAE-Rev.2.1;",,,,,,,,,,,,,,
-"a informação respeita aos trabalhadores e massa salarial das EE que entregaram documento, não necessariamente ao número total de trabalhadores efetivamente em situação de layoff simplificado.",,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+TOTAL,,114593,1376957,709522,667435,,TOTAL,114963,1.0,93469,13290,4305,3357,542
+,PESSOAS SINGULARES COM TRABALHADORES A CARGO ,5487,10399,6921,3478,,AVEIRO,7561,0.0657689865434966,5932,946,357,285,41
+A,"Agricultura, produção animal, caça, floresta e pesca",879,7080,2773,4307,,BEJA,1014,0.008820229117194227,867,97,25,24,1
+B,Indústrias extractivas,64,1026,158,868,,BRAGA,10969,0.09541330689004289,8608,1358,497,467,39
+C,Indústrias transformadoras,11552,309334,142973,166361,,BRAGANÇA,1255,0.010916555761418891,1131,75,39,9,1
+D,"Electricidade, gás, vapor, água quente e fria e ar frio",35,644,93,551,,CASTELO BRANCO,1507,0.01310856536450858,1292,131,38,39,7
+E,"Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição",252,4037,1554,2483,,COIMBRA,3904,0.03395875194627837,3268,400,124,99,13
+F,Construção,3985,54322,7826,46496,,ÉVORA,1359,0.011821194645233684,1145,141,38,30,5
+G,Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos,25476,245967,120341,125626,,FARO,7189,0.06253316284369753,5938,843,236,158,14
+H,Transportes e armazenagem,6662,68446,17211,51235,,GUARDA,1388,0.012073449718605116,1227,105,30,24,2
+I,"Alojamento, restauração e similares",25667,235417,130417,105000,,LEIRIA,5303,0.04612788462374851,4298,651,198,143,13
+J,Actividades de informação e de comunicação ,1442,24463,9425,15038,,LISBOA,27683,0.24079921366004714,22153,3415,1075,825,215
+K,Actividades financeiras e de seguros,383,5267,2885,2382,,PORTALEGRE,753,0.0065499334568513345,653,68,17,13,2
+L,Actividades imobiliárias,2538,16997,9472,7525,,PORTO,21798,0.18960883066725817,17351,2697,945,708,97
+M,"Actividades de consultoria, científicas, técnicas e similares",5401,50998,25036,25962,,SANTARÉM,3601,0.031323121352087195,3039,369,105,75,13
+N,Actividades administrativas e dos serviços de apoio,3745,150167,83832,66335,,SETÚBAL,6508,0.05660951784487183,5496,674,178,134,26
+O,Administração pública e defesa; segurança social obrigatória,47,1316,427,889,,VIANA DO CASTELO,2607,0.022676861251011194,2199,250,80,64,14
+P,Educação,2764,35139,27056,8083,,VILA REAL,1993,0.017336012456181556,1754,158,44,35,2
+Q,Actividades de saúde humana e apoio social,7969,96052,83549,12503,,VISEU,3162,0.02750450144829206,2705,275,92,74,16
+R,"Actividades artísticas, de espectáculos, desportivas e recreativas",4590,25559,11882,13677,,R.A.AÇORES,2089,0.018171063733549056,1725,237,69,53,5
+S,Outras actividades de serviços,5651,34307,25680,8627,,R.A.MADEIRA,3275,0.028487426389360054,2649,396,118,97,15
+T + U,Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das  famílias para uso próprio + Actividades dos organismos internacionais e outras instituições extra-territoriais,4,20,11,9,,DESCONHECIDO/A,45,0.000391430286266016,39,4,,1,1
+,,,,,,,NUT III,,,,,,,
+Notas: ,,,,,,,Alto Minho,2607,0.022676861251011194,2199,250,80,64,14
+"os totais podem ser divergentes, nomeadamente tendo em conta EE com CAE-Rev.2.1;",,,,,,,Cávado,5417,0.04711950801562242,4312,652,233,206,14
+"a informação respeita aos trabalhadores e massa salarial das EE que entregaram documento, não necessariamente ao número total de trabalhadores efetivamente em situação de layoff simplificado.",,,,,,,Ave,5497,0.047815384080095336,4256,698,259,259,25
+,,,,,,,Área Metropolitana do Porto,21447,0.18655567443438323,17117,2668,900,664,98
+,,,,,,,Alto Tâmega,872,0.007585049102754799,789,60,12,10,1
+,,,,,,,Tâmega e Sousa,4309,0.037481624522672514,3333,501,256,204,15
+,,,,,,,Douro,1753,0.015248384262762801,1523,152,46,30,2
+,,,,,,,Terras de Trás-os-Montes,1130,0.009829249410679959,1020,65,35,9,1
+,,,,,,,Oeste,3476,0.03023581500134826,2833,419,126,90,8
+,,,,,,,Região de Aveiro,3739,0.032523507563302974,2948,479,158,130,24
+,,,,,,,Região de Coimbra,4125,0.035881109574384805,3453,420,132,106,14
+,,,,,,,Região de Leiria,3322,0.028896253577237893,2679,411,133,90,9
+,,,,,,,Viseu Dão Lafões,2463,0.021424284334959943,2099,220,68,61,15
+,,,,,,,Beira Baixa,684,0.005949740351243443,612,44,18,9,1
+,,,,,,,Médio Tejo,2158,0.018771256839156945,1818,214,70,48,8
+,,,,,,,Beiras e Serra da Estrela,1961,0.017057662030392388,1686,172,47,48,8
+,,,,,,,Área Metropolitana de Lisboa,31968,0.2780720753633778,25838,3826,1173,896,235
+,,,,,,,Alentejo Litoral,848,0.007376286283412924,693,107,21,25,2
+,,,,,,,Baixo Alentejo,758,0.006593425710880892,666,59,19,14,
+,,,,,,,Lezíria do Tejo,1719,0.014952636935361812,1446,184,41,42,6
+,,,,,,,Alto Alentejo,753,0.0065499334568513345,653,68,17,13,2
+,,,,,,,Alentejo Central,1359,0.011821194645233684,1145,141,38,30,5
+,,,,,,,Algarve,7189,0.06253316284369753,5938,843,236,158,14
+,,,,,,,R. A. dos Açores,2089,0.018171063733549056,1725,237,69,53,5
+,,,,,,,R. A. da Madeira ,3275,0.028487426389360054,2649,396,118,97,15
+,,,,,,,Ignorado,45,0.000391430286266016,39,4,,1,1
