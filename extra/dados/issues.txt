@@ -1,0 +1,10 @@
+Falhas identificadas na extracção, limpeza e análise dos dados dos ficheiros de MTSSS: 
+
+1. Baixas Por Isolamento
+
+- Diferentes formatos de data e ano incorreto (com referência ao ano de 2021). Este problema tem sido consistente ao longo do projeto afetando todos os ficheiros já testados. 
+
+
+
+
+
