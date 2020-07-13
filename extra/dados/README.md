@@ -40,7 +40,7 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 
 ## Dicionário de Dados
 
-### Baixas
+## Baixas
 
 #### Baixas por Data de entrada - `baixas_all.csv` :
 | Coluna | Descrição |
@@ -57,7 +57,7 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 
 ## Layoff 
 
-#### Layoff por Data(Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_layoff.csv` :
+#### Layoff por Data (Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_layoff.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | DATA | Data  |
