@@ -257,6 +257,7 @@ def reducao_atividade_bydistrict():
     red_bydistrict_months=red_bydistrict_months.iloc[2:, checknull_months.array & checktotal_months.array]
     
     # Create dataframe with total counts for each district
+    red_bydistrict_months=red_bydistrict_months.astype('int64')
     red_bydistrict_total=red_bydistrict_months.groupby(level=['Type'],axis=1).sum()
     red_bydistrict_total.columns=['PRO_MOE','PRO_TI','MOE','TI']
 
@@ -275,7 +276,6 @@ def reducao_atividade_bydistrict():
     # Append to dataframe with historical data for reducao de atividade por distrito
     red_bydistrict_historical=pd.concat([red_bydistrict_historical,df_aux],axis=1,join='outer')
     red_bydistrict_historical.to_csv('dataframes/reducao_atividade_bydistrict_historicalData.csv')
-
 
 #### Redução de atividade por Sexo
 def reducao_atividade_bysex():
