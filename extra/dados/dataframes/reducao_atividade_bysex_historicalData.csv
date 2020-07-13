@@ -1,13 +1,13 @@
-TipoPedido,,2020-06-03,2020-06-09,2020-06-16,2020-06-29
-Membro Orgão Estatutário,Feminino,4079.0,4177.0,4177.0,7185
-Membro Orgão Estatutário,Masculino,6540.0,6686.0,6686.0,11707
-Membro Orgão Estatutário,Total,10619.0,10863.0,10863.0,18892
-Prorrogação Membro Orgão Estatutário,Feminino,,,,3284
-Prorrogação Membro Orgão Estatutário,Masculino,,,,5558
-Prorrogação Membro Orgão Estatutário,Total,,,,8842
-Prorrogação Trabalhador Independente,Feminino,51044.0,61406.0,66514.0,66514
-Prorrogação Trabalhador Independente,Masculino,41470.0,50512.0,55320.0,55320
-Prorrogação Trabalhador Independente,Total,92514.0,111918.0,121834.0,121834
-Trabalhador Independente,Feminino,79299.0,82288.0,83445.0,83445
-Trabalhador Independente,Masculino,65737.0,68933.0,70474.0,70474
-Trabalhador Independente,Total,145037.0,151221.0,153919.0,153919
+TipoPedido,,2020-06-03,2020-06-09,2020-06-16,2020-06-29,2020-07-13
+Membro Orgão Estatutário,Feminino,4079.0,4177.0,4177.0,7185,7197
+Membro Orgão Estatutário,Masculino,6540.0,6686.0,6686.0,11707,11721
+Membro Orgão Estatutário,Total,10619.0,10863.0,10863.0,18892,18918
+Prorrogação Membro Orgão Estatutário,Feminino,,,,3284,3284
+Prorrogação Membro Orgão Estatutário,Masculino,,,,5558,5559
+Prorrogação Membro Orgão Estatutário,Total,,,,8842,8843
+Prorrogação Trabalhador Independente,Feminino,51044.0,61406.0,66514.0,66514,69348
+Prorrogação Trabalhador Independente,Masculino,41470.0,50512.0,55320.0,55320,58099
+Prorrogação Trabalhador Independente,Total,92514.0,111918.0,121834.0,121834,127447
+Trabalhador Independente,Feminino,79299.0,82288.0,83445.0,83445,84768
+Trabalhador Independente,Masculino,65737.0,68933.0,70474.0,70474,71545
+Trabalhador Independente,Total,145037.0,151221.0,153919.0,153919,156313
