@@ -17,12 +17,15 @@ O repositório contém:
 ## Tratamento de Dados
 
 Dados considerados relevantes para o estudo, juntamente com alguns detalhes/assumptions tomados no seu tratamento:
-- Baixas por Isolamento por data de entrada (`baixas_all.csv`);
-- Baixas por Isolamento por distrito (`baixas_distrito.csv`);
-- Layoff ao longo do tempo (`df_layoff.csv`) : informação relativa às Entidades Empregadoras (EE) que entregaram documentos;
+#### Baixas por Isolamento
+- Baixas por data de entrada (`baixas_all.csv`);
+- Baixas por distrito (`baixas_distrito.csv`);
+#### Layoff
+- Layoff por dia (`df_layoff.csv`) : informação relativa às Entidades Empregadoras (EE) que entregaram documentos;
 - Layoff por Código de Atividade Económica/ Setor;
 - Layoff por sexo;
 - Layoff por distrito e dimensão da empresa; 
+#### Redução de Atividade
 - Redução de atividade por data de registo dos pedidos (`reducao_atividade_porDia.csv`): 
   - A divisão das várias tabelas na worksheet de Redução de Atividade é obtida através da identificação das linhas que possuem todos as colunas em branco (excepto a primeira);
   - Nesta tabela são apenas mantidas as linhas com formato de data na primeira coluna de forma a remover as linhas com o total, uma vez que a existência destas não é consistente ao longo dos vários ficheiros publicados;
@@ -30,33 +33,38 @@ Dados considerados relevantes para o estudo, juntamente com alguns detalhes/assu
   - Dado que não existe consistência nas colunas com o total de pedidos (por vezes são publicados ficheiros sem total ou com o total apenas para certos tipos de pedidos), começa-se por criar um .csv com os dados por mês para cada tipo (removendo as colunas sem identificação ou identificadas como total);
   - Depois é criado um .csv com os totais, obtidos a partir da soma para todos os meses;
 - Redução de atividade por sexo (`reducao_atividade_porSexo.csv` e `reducao_atividade_bysex_historicaData.csv`);
-- Despedimentos Coletivos (`despedimentos_coletivos.csv`). 
+#### Despedimentos Coletivos
+- Despedimentos por dia (`despedimentos_coletivos.csv`). 
 
 Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 
 ## Dicionário de Dados
 
-Baixas por Isolamento por Data de entrada - `baixas_all.csv` :
+### Baixas
+
+#### Baixas por Data de entrada - `baixas_all.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | DATA | Data de entrada |
 | POR DIA | Número de prestações requiridas por dia |
 | ACUMULADOS | Número de prestações acumulado ao longo do tempo |
 
-Baixas por Isolamento por Distrito - `baixas_distrito.csv` :
+#### Baixas por Distrito - `baixas_distrito.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | DISTRITO | Distrito de entrada da prestação |
 | TOTAL | Número de prestações total por distrito |
 
-Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_layoff.csv` :
+## Layoff 
+
+#### Layoff por Data(Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_layoff.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | DATA | Data  |
 | Nº TRABALHADORES | Número de trabalhadores - valor acumulado |
 | REMUNERAÇÕES DECLARADAS | Massa salarial - valor acumulado |
 
-Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento - Por Setor e Sexo) - `df_work.csv` :
+#### Layoff por Setor e Sexo (Quanto a Entidades Empregadoras (EEs) que entregaram documento) - `df_work.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | Setor | Setores de Indústria  |
@@ -65,13 +73,15 @@ Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento - Por Set
 | FEMININO | | Nº de trabalhadores do sexo feminino |
 | MARCULINO | Nº de trabalhadores do sexo marcunlino |
 
-Layoff (Quanto a Entidades Empregadoras (EEs) que entregaram documento - Por distrito e R.A) - `` :
+#### Layoff por Distrito e R.A (Quanto a Entidades Empregadoras (EEs) que entregaram documento) -  :
 | Coluna | Descrição |
 | --- | --- |
 | TOTAL | Distritos |
 | Nº NISS_EE | Número de Identificação da Segurança Social da Entidade Empregadora |
 
-Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
+## Redução de Atididade
+
+#### Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | DATA | Data de registo dos pedidos |
@@ -88,14 +98,14 @@ Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
 | PRO_MOE_Reducao | Número de pedidos de Redução de Atividade para Membro de Orgão Estatutário - Prorrogação |
 | PRO_MOE_Total | Número total de pedidos para Membro de Orgão Estatutário - Prorrogação |
 
-Redução de Atividade por Distrito, valor acumulado para cada Mês - `reducao_atividade_porDistrito_porMes.csv` :
+#### Redução de Atividade por Distrito, valor acumulado para cada Mês - `reducao_atividade_porDistrito_porMes.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | Distritos | Distrito de Residência |
 | Tipo | Colunas com o número total de pedidos para cada tipo de pedido: COVID_RED_TI (Trabalhador Independente), COVID_PRO_RED_TI (Trabalhador Independente - Prorrogação), COVID_RED_MOE (Membro de Orgão Estatutário), COVID_PRO_RED_TI (Membro de Orgão Estatutário - Prorrogação)  |
 | Month | Colunas com o número total de pedidos em cada mês dado o tipo de pedido. Para cada tipo aparecem apenas os meses para os quais existem contagens |
 
-Redução de Atividade por Distrito, valor acumulado Total- `reducao_atividade_porDistrito_Total.csv` :
+#### Redução de Atividade por Distrito, valor acumulado Total- `reducao_atividade_porDistrito_Total.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | Distritos | Distrito de residência |
@@ -104,14 +114,14 @@ Redução de Atividade por Distrito, valor acumulado Total- `reducao_atividade_p
 | MOE | Número total de pedidos para Membro de Orgão Estatutário  |
 | TI | Número total de pedidos para Trabalhador Independente |
 
-Redução de Atividade por Distrito, Dados Totais Históricos `reducao_atividade_bydistrict_historicalData.csv` :
+#### Redução de Atividade por Distrito, Dados Totais Históricos `reducao_atividade_bydistrict_historicalData.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | Distritos | Distrito de residência |
 | Tipo | Tipo de pedido ((Trabalhador Independente, Trabalhador Independente - Prorrogação, Membro de Orgão Estatutário, Membro de Orgão Estatutário - Prorrogação))|
 | Datas | As restantes colunas contêm o número total de pedidos por tipo e por distrito para a respetiva data|
 
-Redução de Atividade por Sexo- `reducao_atividade_porSexo.csv` :
+#### Redução de Atividade por Sexo- `reducao_atividade_porSexo.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | TipoPedido | Tipo de pedido |
@@ -119,14 +129,16 @@ Redução de Atividade por Sexo- `reducao_atividade_porSexo.csv` :
 | Feminino | Número de trabalhadores do sexo feminino |
 | Masculino | Número de trabalhadores do sexo masculino |
 
-Redução de Atividade por Sexo, Dados Históricos `reducao_atividade_bysex_historicalData.csv` :
+#### Redução de Atividade por Sexo, Dados Históricos `reducao_atividade_bysex_historicalData.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | TipoPedido | Tipo de pedido |
 | Sexo | Sexo do trabalhador (feminino ou masculino) |
 | Datas | As restantes colunas contêm o número total de pedidos por tipo e por sexo para a respetiva data|
 
-Despedimentos Coletivos - `despedimentos_coletivos.csv` :
+## Despedimentos Coletivos
+
+#### Despedimentos Coletivos por Dia - `despedimentos_coletivos.csv` :
 | Coluna | Descrição |
 | --- | --- |
 | DATA | Data de iniciação dos processos |
