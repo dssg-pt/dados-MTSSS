@@ -207,7 +207,13 @@ def reducao_atividade_byday():
 #     date_inds=pd.notnull(pd.to_datetime(red_byday['DATA'],errors='coerce'))
 #     if date_inds.index[date_inds].size > 0:
 #         red_byday['DATA'][date_inds]=red_byday['DATA'][date_inds].dt.strftime('%d/%b')
-    red_byday['DATA'] = red_byday['DATA'].apply(dateparser.parse,date_formats=['%d/%b'])
+#     red_byday['DATA'] = red_byday['DATA'].apply(dateparser.parse,date_formats=['%d/%b'])
+    red_byday['DATA1']=red_byday['DATA']
+    red_byday['DATA'] = pd.to_datetime(red_byday['DATA1'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
+    mask = red_byday['DATA'].isnull()
+    # red_byday.loc[mask, 'DATA1'] = pd.to_datetime(red_byday[mask]['DATA'], errors='coerce')
+    red_byday.loc[mask, 'DATA'] = red_byday[mask]['DATA1'].apply(dateparser.parse)
+    red_byday.drop(['DATA1'],axis=1,inplace=True)
 
     # Remove columns that dont have datetype in DATA, for example columns with the TOTAL
     red_byday.dropna(subset=['DATA'],inplace=True)
