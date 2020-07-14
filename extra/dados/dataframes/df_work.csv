@@ -1,22 +1,22 @@
-Setor,Nº NISS_EE,Nº TRABALHADORES,Feminino,Masculino
-PESSOAS SINGULARES COM TRABALHADORES A CARGO ,5435,10308,6871,3437
-"Agricultura, produção animal, caça, floresta e pesca",864,7016,2754,4262
-Indústrias extractivas,64,1026,158,868
-Indústrias transformadoras,11306,300926,140303,160623
-"Electricidade, gás, vapor, água quente e fria e ar frio",35,644,93,551
-"Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição",246,4016,1548,2468
-Construção,3921,53956,7760,46196
-Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos,25223,244211,119541,124670
-Transportes e armazenagem,6519,67987,17097,50890
-"Alojamento, restauração e similares",25455,234138,129713,104425
-Actividades de informação e de comunicação ,1421,24326,9381,14945
-Actividades financeiras e de seguros,380,5253,2875,2378
-Actividades imobiliárias,2511,16895,9414,7481
-"Actividades de consultoria, científicas, técnicas e similares",5296,50446,24764,25682
-Actividades administrativas e dos serviços de apoio,3689,149699,83566,66133
-Administração pública e defesa; segurança social obrigatória,47,1316,427,889
-Educação,2732,34905,26878,8027
-Actividades de saúde humana e apoio social,7922,95543,83088,12455
-"Actividades artísticas, de espectáculos, desportivas e recreativas",4543,25428,11826,13602
-Outras actividades de serviços,5601,34074,25492,8582
-Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das  famílias para uso próprio + Actividades dos organismos internacionais e outras instituições extra-territoriais,4,20,11,9
+,Setor,Nº empresas,Nº TRABALHADORES,Feminino,Masculino
+10,PESSOAS SINGULARES COM TRABALHADORES A CARGO ,5487,10399,6921,3478
+11,"Agricultura, produção animal, caça, floresta e pesca",879,7080,2773,4307
+12,Indústrias extractivas,64,1026,158,868
+13,Indústrias transformadoras,11552,309334,142973,166361
+14,"Electricidade, gás, vapor, água quente e fria e ar frio",35,644,93,551
+15,"Captação, tratamento e distribuição de água; saneamento, gestão de resíduos e despoluição",252,4037,1554,2483
+16,Construção,3985,54322,7826,46496
+17,Comércio por grosso e a retalho; reparação de veículos automóveis e motociclos,25476,245967,120341,125626
+18,Transportes e armazenagem,6662,68446,17211,51235
+19,"Alojamento, restauração e similares",25667,235417,130417,105000
+20,Actividades de informação e de comunicação ,1442,24463,9425,15038
+21,Actividades financeiras e de seguros,383,5267,2885,2382
+22,Actividades imobiliárias,2538,16997,9472,7525
+23,"Actividades de consultoria, científicas, técnicas e similares",5401,50998,25036,25962
+24,Actividades administrativas e dos serviços de apoio,3745,150167,83832,66335
+25,Administração pública e defesa; segurança social obrigatória,47,1316,427,889
+26,Educação,2764,35139,27056,8083
+27,Actividades de saúde humana e apoio social,7969,96052,83549,12503
+28,"Actividades artísticas, de espectáculos, desportivas e recreativas",4590,25559,11882,13677
+29,Outras actividades de serviços,5651,34307,25680,8627
+30,Actividades das famílias empregadoras de pessoal doméstico e actividades de produção das  famílias para uso próprio + Actividades dos organismos internacionais e outras instituições extra-territoriais,4,20,11,9
