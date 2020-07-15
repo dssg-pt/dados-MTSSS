@@ -12,8 +12,10 @@ Criar uma pipeline de extração diária de dados do ficheiro `.csv` publicado p
 * [Mariana Galrinho](https://github.com/marianabvsg)
 * [Ana Horta](https://github.com/japana26)
 
-## 🎯 Resultado final esperado:
+## 🎯 Resultado final:
 Criação de um conjunto de ficheiros `.csv` e dicionários de dados com fontes consideradas relevantes para estudos de impacto da COVID-19 no mercado de trabalho em Portugal.
+
+Os conjuntos de ficheiros criados e dicionários de dados correspondentes encontram-se disponíveis [aqui](data_dictionary.md).
 
 ## 🧱 Principais etapas:
 * Criar um ficheiro `csv` com dados que considerem relevantes desse ficheiro, tais como:
