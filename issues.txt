@@ -1,0 +1,24 @@
+Falhas identificadas na extracção, limpeza e análise dos dados dos ficheiros de MTSSS: 
+
+1. Baixas Por Isolamento
+
+- Diferentes formatos de data e ano incorreto (com referência ao ano de 2021). Este problema tem sido consistente ao longo do projeto afetando todos os ficheiros já testados. 
+
+
+2. Redução de Atividade
+
+- Redução de atividade por data de registo dos pedidos: a existência de linhas com o total de pedidos acumulado para cada mês não é consistente ao longo dos ficheiros publicados;
+- Redução de atividade por distrito de residência: não existe consistência nas colunas com o total de pedidos (acumulado ao longo de todos os meses). Por vezes são publicados ficheiros sem total ou com o total apenas para certos tipos de pedidos.
+
+
+
+
+Sugestões à MTSSS para um mais fácil processamento e tratamento dos dados:
+
+- A utilização de uma estrutura consistente para cada tabela de dados;
+- A não alteração das posições relativas entre tabelas nas folhas com múltiplas tabela ou a colocação de apenas uma tabela por cada folha (passagem de tabelas na mesma folha para folhas separadas).
+
+
+
+
+
