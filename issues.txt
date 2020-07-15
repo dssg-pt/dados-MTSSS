@@ -16,7 +16,7 @@ Falhas identificadas na extracção, limpeza e análise dos dados dos ficheiros 
 Sugestões à MTSSS para um mais fácil processamento e tratamento dos dados:
 
 - A utilização de uma estrutura consistente para cada tabela de dados;
-- A não alteração das posições relativas entre tabelas nas folhas com múltiplas tabela ou a colocação de apenas uma tabela por cada folha (passagem de tabelas na mesma folha para folhas separadas).
+- A não alteração das posições relativas entre tabelas nas folhas com múltiplas tabelas ou a colocação de apenas uma tabela por cada folha (passagem de tabelas na mesma folha para folhas separadas).
 
 
 
