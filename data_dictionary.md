@@ -40,7 +40,7 @@ Dados considerados relevantes para o estudo, juntamente com alguns detalhes/assu
 #### Despedimentos Coletivos
 - Despedimentos por dia (`despedimentos_coletivos.csv`). 
 
-Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
+Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`, excepto os dataframes `historical_data_company.csv` , `historical_data_person.csv` e `historical_data_company_size.csv`, que se encontram guardados em `original_files/`.
 
 ## Dicionário de Dados
 
@@ -76,12 +76,6 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 | Nº TRABALHADORES | Número total de trabalhadores em layoff |
 | FEMININO | | Nº de trabalhadores do sexo feminino em layoff |
 | MASCULINO | Nº de trabalhadores do sexo masculino em layoff |
-
-#### Layoff por Distrito e R.A (Quanto a Entidades Empregadoras (EEs) que entregaram documento) -  :
-| Coluna | Descrição |
-| --- | --- |
-| TOTAL | Distritos |
-| Nº NISS_EE | Número de Identificação da Segurança Social da Entidade Empregadora |
 
 #### Layoff por setor económico- Quantidade de companhias em layoff - `historical_data_company.csv`:
 | Coluna | Descrição |
