@@ -23,9 +23,12 @@ Dados considerados relevantes para o estudo, juntamente com alguns detalhes/assu
 - Baixas por distrito (`baixas_distrito.csv`);
 #### Layoff
 - Layoff por dia (`df_layoff.csv`) : informação relativa às Entidades Empregadoras (EE) que entregaram documentos;
-- Layoff por Código de Atividade Económica/ Setor;
-- Layoff por sexo;
-- Layoff por distrito e dimensão da empresa; 
+- Layoff por setor económico- Quantidade de companhias em layoff: Informação relativa a quantidade de companhias por setor económico que entraram em layoff. Esta informação e anexa a um dataframe que contem a informação histórica obtida por relatórios antigos (`historical_data_company.csv`)
+- Layoff por setor económico- Quantidade de trabalhadores em layoff: Informação relativa a quantidade de trabalhadores por setor económico que entraram em layoff. Esta informação e anexa a um dataframe que contem a informação histórica obtida por relatórios antigos (`historical_data_person.csv`)
+- Layoff por setor económico- Quantidade de trabalhadores por género em layoff: Informação relativa a quantidade de trabalhadores divididos por género, por setor económico, que entraram em layoff. (`df_work.csv`)
+- Layoff por dimensão da empresa: Informação relativa a quantidade de companhias divididas por dimensão da empresa que entraram em layoff. Esta informação e anexa a um dataframe que contem a informação histórica obtida por relatórios antigos (`historical_data_company_size.csv`)
+- Layoff por região: Informação relativa a quantidade de companhias divididas por região da empresa, que entraram em layoff. (`organization_region.csv`)
+ 
 #### Redução de Atividade
 - Redução de atividade por data de registo dos pedidos (`reducao_atividade_porDia.csv`): 
   - A divisão das várias tabelas na worksheet de Redução de Atividade é obtida através da identificação das linhas que possuem todos as colunas em branco (excepto a primeira);
@@ -69,16 +72,43 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 | Coluna | Descrição |
 | --- | --- |
 | Setor | Setores de Indústria  |
-| Nº NISS_EE | Número de Identificação da Segurança Social da Entidade Empregadora |
-| Nº TRABALHADORES | Número de trabalhadores |
-| FEMININO | | Nº de trabalhadores do sexo feminino |
-| MARCULINO | Nº de trabalhadores do sexo marcunlino |
+| Nº empresas | Número de empresas em layoff |
+| Nº TRABALHADORES | Número total de trabalhadores em layoff |
+| FEMININO | | Nº de trabalhadores do sexo feminino em layoff |
+| MASCULINO | Nº de trabalhadores do sexo masculino em layoff |
 
 #### Layoff por Distrito e R.A (Quanto a Entidades Empregadoras (EEs) que entregaram documento) -  :
 | Coluna | Descrição |
 | --- | --- |
 | TOTAL | Distritos |
 | Nº NISS_EE | Número de Identificação da Segurança Social da Entidade Empregadora |
+
+#### Layoff por setor económico- Quantidade de companhias em layoff - `historical_data_company.csv`:
+| Coluna | Descrição |
+| --- | --- |
+| Setor | Setores de Indústria  |
+| Datas | As restantes colunas contêm o número total de companhias em layoff para a respetiva data|
+
+#### Layoff por setor económico- Quantidade de trabalhadores em layoff - `historical_data_person.csv`
+| Coluna | Descrição |
+| --- | --- |
+| Setor | Setores de Indústria  |
+| Datas | As restantes colunas contêm o número total de trabalhadores em layoff para a respetiva data|
+
+#### Layoff por dimensão da empresa - `historical_data_company_size.csv`
+| Coluna | Descrição |
+| --- | --- |
+| TOTAL | Dimensão da empresa  |
+| Datas | As restantes colunas contêm o número total de empresas em layoff divididos por dimensão para a respetiva data|
+
+#### Layoff por região - `organization_region.csv`
+| Coluna | Descrição |
+| --- | --- |
+| Region | região do Portugal  |
+| N° Empresas | Numero total de companhias em layoff para a respetiva região |
+| Percentual(%) | Numero percentual da região comparado com o total do Portugal |
+
+
 
 ## Redução de Atididade
 
@@ -136,6 +166,8 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 | TipoPedido | Tipo de pedido |
 | Sexo | Sexo do trabalhador (feminino ou masculino) |
 | Datas | As restantes colunas contêm o número total de pedidos por tipo e por sexo para a respetiva data|
+
+
 
 ## Despedimentos Coletivos
 
