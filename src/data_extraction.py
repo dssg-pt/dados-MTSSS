@@ -19,7 +19,7 @@ def latest_file():
     all_my_sheets = pd.read_excel(data, sheet_name=None)
     #save down all worksheets separately
     for key in all_my_sheets: 
-        all_my_sheets[key].to_csv('original_files/%s.csv' %key,index=False)
+        all_my_sheets[key].to_csv('../original_files/%s.csv' %key,index=False)
     return all_my_sheets
 
 

@@ -9,7 +9,7 @@ from datetime import date
 
 ### Nº de Baixas Por Isolamento
 def baixas_all_data():
-    df_baixas = pd.read_csv('original_files/Baixas por Isolamento.csv')
+    df_baixas = pd.read_csv('../original_files/Baixas por Isolamento.csv')
     #Select the relevant information, deleting the first 8 rows
     df_baixas = df_baixas.iloc[6:]
     baixas = df_baixas[df_baixas.columns[:3]]
@@ -25,11 +25,11 @@ def baixas_all_data():
     baixas_all.columns = ['DATA', 'POR DIA', 'ACUMULADOS']
     #fomatting the date 
     baixas_all['DATA'] = baixas_all['DATA'].apply(dateparser.parse)
-    baixas_all.to_csv(r'dataframes/baixas_all.csv', index = False)
+    baixas_all.to_csv(r'../dataframes/baixas_all.csv', index = False)
     return baixas_all
 
 def baixas_distrito_data():
-    df_baixas = pd.read_csv('original_files/Baixas por Isolamento.csv')
+    df_baixas = pd.read_csv('../original_files/Baixas por Isolamento.csv')
     #Select the relevant information, deleting the first 8 rows
     df_baixas = df_baixas.iloc[6:]
     baixas = df_baixas[df_baixas.columns[:3]]
@@ -43,13 +43,13 @@ def baixas_distrito_data():
     baixas_distrito.dropna(axis=1, how='any', inplace=True)
     #renaming the columnsS']
     baixas_distrito.columns = ['DISTRITO', 'TOTAL']
-    baixas_distrito.to_csv(r'dataframes/baixas_distrito.csv', index = False)
+    baixas_distrito.to_csv(r'../dataframes/baixas_distrito.csv', index = False)
     return baixas_distrito
 
 
 ### Lay Off - Estimativa
 def layoff_data():
-    df_layoff = pd.read_csv('original_files/Layoff – Estimativa .csv')
+    df_layoff = pd.read_csv('../original_files/Layoff – Estimativa .csv')
     df_layoff.dropna(axis=0, how='any', inplace=True)
     df_layoff.columns = ['DATA', 'Nº NISS_EE', 'Nº TRABALHADORES', 
                             'REMUNERAÇÕES DECLARADAS']
@@ -64,13 +64,13 @@ def layoff_data():
     df_layoff.drop(['month', 'day', 'year'], axis=1, inplace=True) 
     df_layoff['DATA'] = df_layoff['DATA'].mask(df_layoff['DATA'].dt.year == 2021, 
                              df_layoff['DATA'] + pd.offsets.DateOffset(year=2020))
-    df_layoff.to_csv(r'dataframes/df_layoff.csv', index = False)
+    df_layoff.to_csv(r'../dataframes/df_layoff.csv', index = False)
     return df_layoff
 
 ### LayOff - Amount of companies on layoff by Sector and by Date
 def historic_layoff_CompaniesAmount_bySector(): 
-    data1 = pd.read_csv('original_files/historical_data_company.csv')
-    data2 = pd.read_csv('original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
+    data1 = pd.read_csv('../original_files/historical_data_company.csv')
+    data2 = pd.read_csv('../original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
     #Select the relevant information, deleting the first 8 rows
     df=data2.iloc[8:]
     #import today´s date
@@ -88,14 +88,14 @@ def historic_layoff_CompaniesAmount_bySector():
     new_historical=pd.merge(left=data1, right=df_work, left_on='Setor', right_on='Setor')
     new_historical=new_historical.sort_values(by=[today],ascending=False)
     #Save new data as historical data
-    new_historical.to_csv('original_files/historical_data_company.csv')
+    new_historical.to_csv('../original_files/historical_data_company.csv')
     return new_historical               
 
 
 ### Layoff - People amount by Sector and by Date
 def historic_layoff_PeopleAmount_bySector():
-    data3 = pd.read_csv('original_files/historical_data_person.csv')
-    data4 = pd.read_csv('original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
+    data3 = pd.read_csv('../original_files/historical_data_person.csv')
+    data4 = pd.read_csv('../original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
     #Select the relevant information, deleting the first 8 rows
     df=data4.iloc[8:]
     #import today´s date
@@ -113,14 +113,14 @@ def historic_layoff_PeopleAmount_bySector():
     new_historical = pd.merge(left=data3, right=df_work, left_on='Setor', right_on='Setor')
     new_historical=new_historical.sort_values(by=[today],ascending=False)
     #Save new data as historical data
-    new_historical.to_csv('original_files/historical_data_person.csv')
+    new_historical.to_csv('../original_files/historical_data_person.csv')
     return new_historical
 
 ### Layoff - by organization dimension and by date
 def layoff_organization_dimension():
-    data5 = pd.read_csv('original_files/historical_data_company_size.csv')
+    data5 = pd.read_csv('../original_files/historical_data_company_size.csv')
     data5=data5.drop(['Unnamed: 0'],axis=1)
-    data6 = pd.read_csv('original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
+    data6 = pd.read_csv('../original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
     #Create new dataset
     df=data6 
     # Search for row and column position of desired data
@@ -146,14 +146,14 @@ def layoff_organization_dimension():
     df2.columns=['TOTAL',today]
     new_historical = pd.merge(left=data5, right=df2, left_on='TOTAL', right_on='TOTAL')
     new_historical=new_historical.sort_values(by=[today],ascending=False)
-    new_historical.to_csv('original_files/historical_data_company_size.csv')
+    new_historical.to_csv('../original_files/historical_data_company_size.csv')
     return new_historical
 
 
 ### Layoff - by District
 def layoff_region_data():
     #Select new dataset
-    data4 = pd.read_csv('original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
+    data4 = pd.read_csv('../original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
     df=data4
     #Drop all set of row and columns that are filled with NaN
     df.dropna(axis=0, how='all', inplace=True)
@@ -181,14 +181,14 @@ def layoff_region_data():
     df_region=df_region.reset_index()
     df_region=df_region.drop('index',1)
     df_region.dropna(axis=0, how='any', inplace=True)
-    df_region.to_csv(r'dataframes/organization_region.csv', index = False)
+    df_region.to_csv(r'../dataframes/organization_region.csv', index = False)
     return df_region
 
 
 #### Redução de atividade por Dia
 def reducao_atividade_byday():
     
-    reducao_atividade=pd.read_csv('original_files/Redução de Actividade TI e MOE.csv')
+    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE.csv')
     # Drop rows with no info
     reducao_atividade.dropna(how='all',inplace=True)
     # Reset indexes
@@ -221,13 +221,13 @@ def reducao_atividade_byday():
     red_byday.reset_index(drop=True, inplace=True)
 
     # Save csv
-    red_byday.to_csv(r'dataframes/reducao_atividade_porDia.csv', index = False)
+    red_byday.to_csv(r'../dataframes/reducao_atividade_porDia.csv', index = False)
   
 
 #### Redução de atividade por Distrito
 def reducao_atividade_bydistrict():
     
-    reducao_atividade=pd.read_csv('original_files/Redução de Actividade TI e MOE.csv')
+    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE.csv')
     # Drop rows with no info
     reducao_atividade.dropna(how='all',inplace=True)
     # Reset indexes
@@ -268,8 +268,8 @@ def reducao_atividade_bydistrict():
     red_bydistrict_total.columns=['PRO_MOE','PRO_TI','MOE','TI']
 
     # Save csvs (per month and total)
-    red_bydistrict_months.to_csv(r'dataframes/reducao_atividade_porDistrito_porMes.csv')
-    red_bydistrict_total.to_csv(r'dataframes/reducao_atividade_porDistrito_Total.csv')
+    red_bydistrict_months.to_csv(r'../dataframes/reducao_atividade_porDistrito_porMes.csv')
+    red_bydistrict_total.to_csv(r'../dataframes/reducao_atividade_porDistrito_Total.csv')
     
     ## APPEND TO HISTORICAL DATA
     # Transform columns into indexes
@@ -278,15 +278,15 @@ def reducao_atividade_bydistrict():
     df_aux.columns=[date.today()]
 
     # Import dataframe with historical data
-    red_bydistrict_historical=pd.read_csv('dataframes/reducao_atividade_bydistrict_historicalData.csv',index_col=[0,1])
+    red_bydistrict_historical=pd.read_csv('../dataframes/reducao_atividade_bydistrict_historicalData.csv',index_col=[0,1])
     # Append to dataframe with historical data for reducao de atividade por distrito
     red_bydistrict_historical=pd.concat([red_bydistrict_historical,df_aux],axis=1,join='outer')
-    red_bydistrict_historical.to_csv('dataframes/reducao_atividade_bydistrict_historicalData.csv')
+    red_bydistrict_historical.to_csv('../dataframes/reducao_atividade_bydistrict_historicalData.csv')
 
 #### Redução de atividade por Sexo
 def reducao_atividade_bysex():
     
-    reducao_atividade=pd.read_csv('original_files/Redução de Actividade TI e MOE.csv')
+    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE.csv')
     # Drop rows with no info
     reducao_atividade.dropna(how='all',inplace=True)
     # Reset indexes
@@ -307,7 +307,7 @@ def reducao_atividade_bysex():
     red_bysex.reset_index(drop=True, inplace=True)
 
     # Save csv
-    red_bysex.to_csv(r'dataframes/reducao_atividade_porSexo.csv', index = False)
+    red_bysex.to_csv(r'../dataframes/reducao_atividade_porSexo.csv', index = False)
     
     ## APPEND TO HISTORICAL DATA
     # Transform columns into indexes
@@ -316,15 +316,15 @@ def reducao_atividade_bysex():
     red_bysex_new.columns=[date.today()]
 
     # Import dataframe with historical data
-    red_bysex_historical=pd.read_csv('dataframes/reducao_atividade_bysex_historicalData.csv',index_col=[0,1])
+    red_bysex_historical=pd.read_csv('../dataframes/reducao_atividade_bysex_historicalData.csv',index_col=[0,1])
     # # Append to dataframe with historical data for reducao de atividade por sexo
     red_bysex_historical=pd.concat([red_bysex_historical,red_bysex_new],axis=1,join='outer')
-    red_bysex_historical.to_csv('dataframes/reducao_atividade_bysex_historicalData.csv')
+    red_bysex_historical.to_csv('../dataframes/reducao_atividade_bysex_historicalData.csv')
 
 
 ### Despedimentos coletivos
 def despedimentos_coletivos():
-    despedimentos=pd.read_csv('original_files/Despedimentos coletivos.csv')
+    despedimentos=pd.read_csv('../original_files/Despedimentos coletivos.csv')
     # Drop first column which is empty
     despedimentos=despedimentos.drop(despedimentos.columns[0],axis=1)
     # Drop rows with nan
@@ -333,7 +333,7 @@ def despedimentos_coletivos():
     # Rename columns
     despedimentos.columns = ['DATA', 'COLETIVOS_TOTAL', 'COLETIVOS_MICRO','TRABALHADORES_TOTAL', 'TRABALHADORES_MICRO']
     # Save csv
-    despedimentos.to_csv(r'dataframes/despedimentos_coletivos.csv', index = False)
+    despedimentos.to_csv(r'../dataframes/despedimentos_coletivos.csv', index = False)
 
 
 if __name__ == '__main__':
