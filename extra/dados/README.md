@@ -110,7 +110,7 @@ Guarda os dados tratados (ficheiros .csv mencionados acima) em `dataframes/`.
 
 
 
-## Redução de Atididade
+## Redução de Atividade
 
 #### Redução de Atividade por Dia - `reducao_atividade_porDia.csv` :
 | Coluna | Descrição |
