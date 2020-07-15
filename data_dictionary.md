@@ -10,7 +10,7 @@ O repositório contém:
 - `data_analysis.ipynb`: notebook Python que trata da análise visual dos dados em `dataframes/`.
 - `issues.txt`: ficheiro .txt com descrição dos problemas que ocorrem devido a inconsistências na estrutura dos dados nos ficheiros em `original_files/`.
 
-## Extracão de Dados
+## Extração de Dados
 
 - Extrai o último ficheiro do [MTSSS](http://www.gep.mtsss.gov.pt/indicadores-covid-19-mtsss)
 - Guarda todas as worksheets do ficheiro .xlsx separadamente em `original_files/`
