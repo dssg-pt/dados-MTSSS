@@ -116,6 +116,20 @@ def historic_layoff_PeopleAmount_bySector():
     new_historical.to_csv('../original_files/historical_data_person.csv')
     return new_historical
 
+def layoff_companies_peopleAmount_bySex():
+    data2 = pd.read_csv('../original_files/Layoff – Estim. - CAE,Dim,Dist.csv')
+    #Select the relevant information, deleting the first 8 rows
+    df=data2.iloc[8:]
+    #Select the columns that are relevant to work sectors
+    df_work=df[df.columns[0:6]]
+    df_work=df_work.iloc[2:23]
+    #Rename columns for data cleaning
+    df_work=df_work.drop(['EEs QUE ENTREGARAM DOCUMENTO - COVID19 - Layoff Simplificado'],axis=1)
+    df_work=df_work.rename(columns={'Unnamed: 1':'Setor','Unnamed: 2':'Nº empresas','Unnamed: 3':'Nº TRABALHADORES','Unnamed: 4':'Feminino','Unnamed: 5':'Masculino'})
+    #Save new data
+    df_work.to_csv('../dataframes/df_work.csv')
+    return df_work
+
 ### Layoff - by organization dimension and by date
 def layoff_organization_dimension():
     data5 = pd.read_csv('../original_files/historical_data_company_size.csv')
@@ -343,6 +357,7 @@ if __name__ == '__main__':
     df_layoff=layoff_data()
     historical_data_company=historic_layoff_CompaniesAmount_bySector()
     historical_data_person=historic_layoff_PeopleAmount_bySector()
+    df_layofff_bysex=layoff_companies_peopleAmount_bySex()
     historical_data_company_size=layoff_organization_dimension()
     layoff_region=layoff_region_data()
     reducao_atividade_byday()
