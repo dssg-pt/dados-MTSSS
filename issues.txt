@@ -11,7 +11,9 @@ Falhas identificadas na extracção, limpeza e análise dos dados dos ficheiros 
 - Redução de atividade por distrito de residência: não existe consistência nas colunas com o total de pedidos (acumulado ao longo de todos os meses). Por vezes são publicados ficheiros sem total ou com o total apenas para certos tipos de pedidos.
 
 
+3. Layoff- Estim.
 
+- Diferentes formatos de apresentação dos dados. A estrutura não e consistente. Dados apresentados de layoff por dimensão de empresa foram mudados de posição e de formato entre diferentes datas.
 
 Sugestões à MTSSS para um mais fácil processamento e tratamento dos dados:
 
