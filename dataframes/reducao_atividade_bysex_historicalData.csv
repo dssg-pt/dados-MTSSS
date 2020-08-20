@@ -1,13 +1,13 @@
-TipoPedido,,2020-06-03,2020-06-09,2020-06-16,2020-06-29,2020-07-13,2020-07-23
-Membro Orgão Estatutário,Feminino,4079.0,4177.0,4177.0,7185,7197,7197
-Membro Orgão Estatutário,Masculino,6540.0,6686.0,6686.0,11707,11721,11721
-Membro Orgão Estatutário,Total,10619.0,10863.0,10863.0,18892,18918,18918
-Prorrogação Membro Orgão Estatutário,Feminino,,,,3284,3284,3284
-Prorrogação Membro Orgão Estatutário,Masculino,,,,5558,5559,5559
-Prorrogação Membro Orgão Estatutário,Total,,,,8842,8843,8843
-Prorrogação Trabalhador Independente,Feminino,51044.0,61406.0,66514.0,66514,69348,69348
-Prorrogação Trabalhador Independente,Masculino,41470.0,50512.0,55320.0,55320,58099,58099
-Prorrogação Trabalhador Independente,Total,92514.0,111918.0,121834.0,121834,127447,127447
-Trabalhador Independente,Feminino,79299.0,82288.0,83445.0,83445,84768,84768
-Trabalhador Independente,Masculino,65737.0,68933.0,70474.0,70474,71545,71545
-Trabalhador Independente,Total,145037.0,151221.0,153919.0,153919,156313,156313
+TipoPedido,,2020-06-03,2020-06-09,2020-06-16,2020-06-29,2020-07-13,2020-07-23,2020-08-20
+Membro Orgão Estatutário,Feminino,4079.0,4177.0,4177.0,7185,7197,7197,7558
+Membro Orgão Estatutário,Masculino,6540.0,6686.0,6686.0,11707,11721,11721,12348
+Membro Orgão Estatutário,Total,10619.0,10863.0,10863.0,18892,18918,18918,19906
+Prorrogação Membro Orgão Estatutário,Feminino,,,,3284,3284,3284,4959
+Prorrogação Membro Orgão Estatutário,Masculino,,,,5558,5559,5559,8558
+Prorrogação Membro Orgão Estatutário,Total,,,,8842,8843,8843,13517
+Prorrogação Trabalhador Independente,Feminino,51044.0,61406.0,66514.0,66514,69348,69348,70912
+Prorrogação Trabalhador Independente,Masculino,41470.0,50512.0,55320.0,55320,58099,58099,58724
+Prorrogação Trabalhador Independente,Total,92514.0,111918.0,121834.0,121834,127447,127447,129636
+Trabalhador Independente,Feminino,79299.0,82288.0,83445.0,83445,84768,84768,86892
+Trabalhador Independente,Masculino,65737.0,68933.0,70474.0,70474,71545,71545,72441
+Trabalhador Independente,Total,145037.0,151221.0,153919.0,153919,156313,156313,159333

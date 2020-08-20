@@ -202,7 +202,7 @@ def layoff_region_data():
 #### Redução de atividade por Dia
 def reducao_atividade_byday():
     
-    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE.csv')
+    reducao_atividade=pd.read_csv('../original_files/Redução Actividade TI e MOE (1).csv')
     # Drop rows with no info
     reducao_atividade.dropna(how='all',inplace=True)
     # Reset indexes
@@ -241,7 +241,7 @@ def reducao_atividade_byday():
 #### Redução de atividade por Distrito
 def reducao_atividade_bydistrict():
     
-    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE.csv')
+    reducao_atividade=pd.read_csv('../original_files/Redução Actividade TI e MOE (2).csv')
     # Drop rows with no info
     reducao_atividade.dropna(how='all',inplace=True)
     # Reset indexes
@@ -250,7 +250,7 @@ def reducao_atividade_bydistrict():
     m = np.concatenate(( [True], reducao_atividade.iloc[:,1:13].isna().all(axis=1), [True] )) 
     indexes = np.flatnonzero(m[1:] != m[:-1])
     # Separate tables
-    red_bydistrict = reducao_atividade[indexes[2]:indexes[3]]
+    red_bydistrict = reducao_atividade[indexes[0]:indexes[1]]
     
     red_bydistrict_months=red_bydistrict
     # Clean bydistrict table 
@@ -300,7 +300,7 @@ def reducao_atividade_bydistrict():
 #### Redução de atividade por Sexo
 def reducao_atividade_bysex():
     
-    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE.csv')
+    reducao_atividade=pd.read_csv('../original_files/Redução de Actividade TI e MOE (2).csv')
     # Drop rows with no info
     reducao_atividade.dropna(how='all',inplace=True)
     # Reset indexes
@@ -309,7 +309,7 @@ def reducao_atividade_bysex():
     m = np.concatenate(( [True], reducao_atividade.iloc[:,1:13].isna().all(axis=1), [True] )) 
     indexes = np.flatnonzero(m[1:] != m[:-1])
     # Separate tables
-    red_bysex = reducao_atividade[indexes[4]+2:indexes[5]]
+    red_bysex = reducao_atividade[indexes[2]+2:indexes[3]]
     
     # Clean bysex table 
     red_bysex=red_bysex.dropna(axis=1)
